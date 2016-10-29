@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/tb_windowsmanager_isim_beh.exe" -prj "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/tb_windowsmanager_beh.prj" "work.tb_windowsmanager" 
