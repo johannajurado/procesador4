@@ -44,6 +44,7 @@ ARCHITECTURE behavior OF Alu_test IS
  
     COMPONENT Alu
     PORT(
+	      carry : IN  std_logic;
          entrada_suma1 : IN  std_logic_vector(31 downto 0);
          entrada_sum2 : IN  std_logic_vector(31 downto 0);
          alu_op : IN  std_logic_vector(5 downto 0);
@@ -53,6 +54,7 @@ ARCHITECTURE behavior OF Alu_test IS
     
 
    --Inputs
+	signal carry : std_logic := '0';
    signal entrada_suma1 : std_logic_vector(31 downto 0) := (others => '0');
    signal entrada_sum2 : std_logic_vector(31 downto 0) := (others => '0');
    signal alu_op : std_logic_vector(5 downto 0) := (others => '0');
@@ -68,6 +70,7 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: Alu PORT MAP (
+	       carry => carry,
           entrada_suma1 => entrada_suma1,
           entrada_sum2 => entrada_sum2,
           alu_op => alu_op,
@@ -79,9 +82,16 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin	
+	   carry <= '0';
 		entrada_suma1 <= x"00000004";
 		entrada_sum2 <= x"00000002";
 		alu_op <= "000000";
+		wait for 100 ns;
+		carry <= '0';
+		entrada_suma1 <= "00000000000000000000000000001100";
+		entrada_sum2 <= "00000000000000000000000000000010";
+		alu_op  <= "100110";
+      
      
 
 

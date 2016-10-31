@@ -39,7 +39,7 @@ end memoriaInstrucciones;
 
 architecture Behavioral of memoriaInstrucciones is
 
-type rom_type is array (0 to 31) of std_logic_vector (31 downto 0);
+type rom_type is array (0 to 39) of std_logic_vector (31 downto 0);
 	
 	impure function InitRomFromFile (RomFileName : in string) return rom_type is
 	
@@ -55,7 +55,7 @@ type rom_type is array (0 to 31) of std_logic_vector (31 downto 0);
 		end loop;
 	return temp_mem;
 	end function;
-	signal instructions : rom_type := InitRomFromFile("resta.txt");
+	signal instructions : rom_type := InitRomFromFile("prueba.txt");
 
 
 begin

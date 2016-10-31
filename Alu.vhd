@@ -43,7 +43,7 @@ end Alu;
 architecture Behavioral of Alu is
 
 begin
-process(entrada_suma1, entrada_sum2, alu_op)
+process(entrada_suma1, entrada_sum2, alu_op,carry)
 begin
  case (alu_op) is 
 			when "000000" => -- add
@@ -51,17 +51,17 @@ begin
 			when "010000" => -- addcc
 				salida_ALU <= entrada_suma1 + entrada_sum2;
          when "001000" => -- addX
-				salida_ALU <= entrada_suma1 + entrada_sum2;
+				salida_ALU <= entrada_suma1 + entrada_sum2 + carry;
          when "011000" => -- addXcc
-				salida_ALU <= entrada_suma1 + entrada_sum2;
+				salida_ALU <= entrada_suma1 + entrada_sum2 + carry;
          when "000100" => -- sub
 				salida_ALU <= entrada_suma1 - entrada_sum2;				
 			when "010100" => -- subcc
 				salida_ALU <= entrada_suma1 - entrada_sum2;
 			when "001100" => -- subX
-				salida_ALU <= entrada_suma1 - entrada_sum2;
+				salida_ALU <= entrada_suma1 - entrada_sum2 + carry;
          when "011100" => -- subXcc
-				salida_ALU <= entrada_suma1 - entrada_sum2;
+				salida_ALU <= entrada_suma1 - entrada_sum2 + carry;
          when "000001" => -- and
 				salida_ALU <= entrada_suma1 and entrada_sum2;
 			when "000101" => -- andn
@@ -83,8 +83,8 @@ begin
 			when "000111" => -- xnor
 				salida_ALU <= entrada_suma1 xnor entrada_sum2;
          when "010011" => -- xorcc
-				salida_ALU <= entrada_suma1 xor entrada_sum2;				
-				
+				salida_ALU <= entrada_suma1 xor entrada_sum2;
+        
 			when others => --otras instrucciones
 				salida_ALU <= (others=>'0');
 		end case;
