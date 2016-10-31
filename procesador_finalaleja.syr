@@ -1,0 +1,162 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: procesador_finalaleja.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "procesador_finalaleja.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "procesador_finalaleja"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : procesador_finalaleja
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/procesador_finalaleja is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/procesador_finalaleja.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/procesador_finalaleja.vhd".
+WARNING:HDLParsers:3607 - Unit work/procesador_finalaleja/arq_procesador is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/procesador_finalaleja.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/procesador_finalaleja.vhd".
+WARNING:HDLParsers:3607 - Unit work/memoriaInstrucciones is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/memoriaInstrucciones.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/memoriaInstrucciones.vhd".
+WARNING:HDLParsers:3607 - Unit work/memoriaInstrucciones/Behavioral is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/memoriaInstrucciones.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/memoriaInstrucciones.vhd".
+WARNING:HDLParsers:3607 - Unit work/muxx is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/muxx.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/muxx.vhd".
+WARNING:HDLParsers:3607 - Unit work/muxx/arq_mux is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/muxx.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/muxx.vhd".
+WARNING:HDLParsers:3607 - Unit work/nPC is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/nPC.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/nPC.vhd".
+WARNING:HDLParsers:3607 - Unit work/nPC/Behavioral is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/nPC.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/nPC.vhd".
+WARNING:HDLParsers:3607 - Unit work/psr is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/psr.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/psr.vhd".
+WARNING:HDLParsers:3607 - Unit work/registroArchivo_RF is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/registroArchivo_RF.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/registroArchivo_RF.vhd".
+WARNING:HDLParsers:3607 - Unit work/registroArchivo_RF/Behavioral is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/registroArchivo_RF.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/registroArchivo_RF.vhd".
+WARNING:HDLParsers:3607 - Unit work/seu is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/seu.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/seu.vhd".
+WARNING:HDLParsers:3607 - Unit work/seu/arq_seu is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/seu.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/seu.vhd".
+WARNING:HDLParsers:3607 - Unit work/sumador is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/sumador.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/sumador.vhd".
+WARNING:HDLParsers:3607 - Unit work/sumador/Behavioral is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/sumador.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/sumador.vhd".
+WARNING:HDLParsers:3607 - Unit work/unidadControl is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/unidadControl.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/unidadControl.vhd".
+WARNING:HDLParsers:3607 - Unit work/unidadControl/Behavioral is now defined in a different file.  It was defined in "D:/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/unidadControl.vhd", and is now defined in "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/unidadControl.vhd".
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/sumador.vhd" in Library work.
+Architecture behavioral of Entity sumador is up to date.
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/nPC.vhd" in Library work.
+Architecture behavioral of Entity npc is up to date.
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/memoriaInstrucciones.vhd" in Library work.
+Entity <memoriainstrucciones> compiled.
+Entity <memoriainstrucciones> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/unidadControl.vhd" in Library work.
+Entity <unidadcontrol> compiled.
+Entity <unidadcontrol> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/registroArchivo_RF.vhd" in Library work.
+Architecture behavioral of Entity registroarchivo_rf is up to date.
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/muxx.vhd" in Library work.
+Architecture arq_mux of Entity muxx is up to date.
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/seu.vhd" in Library work.
+Architecture arq_seu of Entity seu is up to date.
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/psr.vhd" in Library work.
+Entity <psr> compiled.
+Entity <psr> (Architecture <arqPsr>) compiled.
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/Alu.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/procesador_finalaleja.vhd" in Library work.
+Entity <procesador_finalaleja> compiled.
+Entity <procesador_finalaleja> (Architecture <arq_procesador>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <procesador_finalaleja> in library <work> (architecture <arq_procesador>).
+"C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/procesador_finalaleja.vhd" line 252: In entity <procesador_finalaleja>
+ERROR:Xst:2585 - Port <reset> of instance <Inst_PSR> does not exist in definition <PSR>. Please compare the definition of block <PSR> to its component declaration to detect the mismatch.
+--> 
+
+Total memory usage is 249788 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

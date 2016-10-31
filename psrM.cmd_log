@@ -1,0 +1,3 @@
+vhdtdtfi -prj procesador_aleja -o "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/psrM.vhi" -module psrM -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work psr_modifier.vhd 
+vhdtdtfi -prj procesador_aleja -o "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/psrM.vhi" -module psrM -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work psr_modifier.vhd 
+vhdtdtfi -prj procesador_aleja -o "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/psrM.vhi" -module psrM -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work psr_modifier.vhd 
