@@ -1,46 +1,19 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/test_procesadorfinal_isim_beh.exe -prj C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/test_procesadorfinal_beh.prj work.test_procesadorfinal 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesador_isim_beh.exe -prj D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesador_beh.prj work.Tb_procesador 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/windows_manager.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/unidadControl.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/sumador.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/seu.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/registroArchivo_RF.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/psr_modifier.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/psr.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/nPC.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/muxx.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/memoriaInstrucciones.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/Alu.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/procesador_finalaleja.vhd" into library work
-Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/test_procesadorfinal.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/tbprocesador.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2415: Warning: "CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0."
+WARNING:HDLCompiler:89 - "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/tbprocesador.vhd" Line 64: <procesador3_finaldanieladelgado> remains a black-box since it has no binding entity.
 Completed static elaboration
+WARNING:Simulator:648 - "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/tbprocesador.vhd" Line 64. Instance procesador3_finaldanieladelgado is unbound
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package std_logic_arith
-Compiling package std_logic_unsigned
-Compiling package numeric_std
-Compiling package textio
-Compiling architecture behavioral of entity sumador [sumador_default]
-Compiling architecture behavioral of entity nPC [npc_default]
-Compiling architecture behavioral of entity memoriaInstrucciones [memoriainstrucciones_default]
-Compiling architecture arqwm of entity wm [wm_default]
-Compiling architecture behavioral of entity unidadControl [unidadcontrol_default]
-Compiling architecture behavioral of entity registroArchivo_RF [registroarchivo_rf_default]
-Compiling architecture arqpsrm of entity psrM [psrm_default]
-Compiling architecture arqpsr of entity psr [psr_default]
-Compiling architecture arq_mux of entity muxx [muxx_default]
-Compiling architecture arq_seu of entity seu [seu_default]
-Compiling architecture behavioral of entity Alu [alu_default]
-Compiling architecture arq_procesador of entity procesador_finalaleja [procesador_finalaleja_default]
-Compiling architecture behavior of entity test_procesadorfinal
+Compiling architecture behavior of entity tb_procesador
 Time Resolution for simulation is 1ps.
-Waiting for 3 sub-compilation(s) to finish...
-Compiled 31 VHDL Units
-Built simulation executable C:/Users/utp.CRIE/Desktop/procesador4/procesador 2 final alejandra/procesador 2 aleja/procesador_aleja/test_procesadorfinal_isim_beh.exe
-Fuse Memory Usage: 38304 KB
-Fuse CPU Usage: 561 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 VHDL Units
+Built simulation executable D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesador_isim_beh.exe
+Fuse Memory Usage: 29752 KB
+Fuse CPU Usage: 374 ms

@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    23:05:02 10/12/2016 
+-- Create Date:    18:05:33 11/05/2016 
 -- Design Name: 
 -- Module Name:    seu - Behavioral 
 -- Project Name: 
@@ -19,7 +19,6 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -30,24 +29,28 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity seu is
-    Port ( inmediato13bits : in  STD_LOGIC_VECTOR (12 downto 0);
-           salidaInmediato : out  STD_LOGIC_VECTOR (31 downto 0));
-end seu;
+entity sEU is
+    Port ( i13bits : in  STD_LOGIC_VECTOR (12 downto 0);
+           salida : out  STD_LOGIC_VECTOR (31 downto 0));
+end sEU;
 
-architecture arq_seu of seu is
+architecture Behavioral of sEU is
 
 begin
-
-process(inmediato13bits)
+process(i13bits)
 begin
-if(inmediato13bits(12) = '1')then --verifica si el numero es negativo
-			salidaInmediato(12 downto 0) <= inmediato13bits;
-			salidaInmediato(31 downto 13) <= (others=>'1');--completa con unos por ser negativo
-		else
-			salidaInmediato(12 downto 0) <= inmediato13bits;
-			salidaInmediato(31 downto 13) <= (others=>'0');--si es positivo completa con ceros
-		end if;
+
+if(i13bits(12) = '1')then--Verifica si es numero ingresado es negativo
+	salida(12 downto 0) <= i13bits;
+	salida(31 downto 13) <= (others=>'1');--Complementa el numero con unos por ser negativo
+
+else
+	salida(12 downto 0) <= i13bits;
+	salida(31 downto 13) <= (others=>'0');--Complementa el numero con ceros por no ser numero negativo
+
+end if;
+
 end process; 
 
-end arq_seu;
+end Behavioral;
+

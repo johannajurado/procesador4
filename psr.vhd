@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    23:07:42 10/18/2016 
+-- Create Date:    18:06:54 11/05/2016 
 -- Design Name: 
--- Module Name:    psr - arq_psr 
+-- Module Name:    psr - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 

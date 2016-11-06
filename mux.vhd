@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    22:45:54 10/12/2016 
+-- Create Date:    18:04:51 11/05/2016 
 -- Design Name: 
 -- Module Name:    mux - Behavioral 
 -- Project Name: 
@@ -29,25 +29,29 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity mux is
-    Port ( dato_seu : in  STD_LOGIC_VECTOR (31 downto 0);
-           crs2 : in  STD_LOGIC_VECTOR (31 downto 0);
-           salida_mux : out  STD_LOGIC_VECTOR (31 downto 0));
-end mux;
+entity mUX is
+    Port ( inmediato : in  STD_LOGIC;
+           datoSeu : in  STD_LOGIC_VECTOR (31 downto 0);
+           rfuente2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           salida : out  STD_LOGIC_VECTOR (31 downto 0));
+end mUX;
 
-architecture Behavioral of mux is
+architecture Behavioral of mUX is
 
 begin
-
-process(i,dato_seu,crs2)
+process(inmediato,datoSeu,rfuente2)
 begin
-	if(i='1')then
-		salida_mux<= dato_seu;
-	else 
-		if(i='0')then
-			salida_mux <= crs2;
-		end if ; 
+			if(inmediato='1')then ---- Indicando que si mi variable inmediato es un '1'
+					salida<= datoSeu; -- Deja pasar el Inmediato  de 13 bits que proviene del modulo sEU 
+
+					
+			else 
+			if(inmediato='0')then -- Indicando que la variable inmediato es un '0' 
+					salida<= rfuente2; -- Deje pasar la variable salida que hace referencia a la varible resgistros2 de el modulo rF
+			end if ; 
+
 	end if; 	
+
 end process; 
 
 end Behavioral;
