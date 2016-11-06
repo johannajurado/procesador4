@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\Desktop\PROCESADOR NUEVO\PROCESADOR4\Tb_procesador_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesador_isim_beh.wdb 
+Running: D:\Desktop\PROCESADOR NUEVO\PROCESADOR4\Tb_procesadorIntento_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesadorIntento_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 ----------------------------------------------------------------------
 INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -25,4 +25,13 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_procesadorintento/uut/Inst_sumadOR/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /tb_procesadorintento/uut/Inst_iM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_procesadorintento/uut/Inst_rF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_procesadorintento/uut/Inst_rF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_procesadorintento/uut/Inst_rF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
+ERROR: Index 40 out of bound 0 to 39. 
+ERROR: In process im.vhd:62 
+ 
+INFO: Simulator is stopped.

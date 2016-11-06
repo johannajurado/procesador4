@@ -38,7 +38,7 @@ entity wm is
 end wm;
 
 architecture arqWm of wm is
-	signal rs1int,rs2int,rdint: integer range 0 to 4 := 0;
+	signal rs1int,rs2int,rdint: integer range 0 to 39 := 0;
 	signal cocwp : integer := conv_integer(cwp);
 begin
 	process(rs1,rs2,rd,cwp,op,op3,rs1int,rs2int,rdint)

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesador_isim_beh.exe" -prj "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesador_beh.prj" "work.Tb_procesador" 
+-intstyle "ise" -incremental -o "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesadorIntento_isim_beh.exe" -prj "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesadorIntento_beh.prj" "work.Tb_procesadorIntento" 

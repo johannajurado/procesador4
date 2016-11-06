@@ -1,19 +1,46 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesador_isim_beh.exe -prj D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesador_beh.prj work.Tb_procesador 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesadorIntento_isim_beh.exe -prj D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesadorIntento_beh.prj work.Tb_procesadorIntento 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/tbprocesador.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/wm.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/uc.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/sumador.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/seu.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/rf.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/psrmodifier.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/psr.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/npc.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/mux.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/im.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/alu.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/procesador_intento.vhd" into library work
+Parsing VHDL file "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesadorIntento.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:89 - "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/tbprocesador.vhd" Line 64: <procesador3_finaldanieladelgado> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2415: Warning: "CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0."
 Completed static elaboration
-WARNING:Simulator:648 - "D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/tbprocesador.vhd" Line 64. Instance procesador3_finaldanieladelgado is unbound
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavior of entity tb_procesador
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package numeric_std
+Compiling architecture behavioral of entity sumadOR [sumador_default]
+Compiling architecture behavioral of entity nPC [npc_default]
+Compiling architecture behavioral of entity iM [im_default]
+Compiling architecture behavioral of entity uC [uc_default]
+Compiling architecture arqwm of entity wm [wm_default]
+Compiling architecture behavioral of entity rF [rf_default]
+Compiling architecture behavioral of entity mUX [mux_default]
+Compiling architecture behavioral of entity sEU [seu_default]
+Compiling architecture behavioral of entity pSR_modifier [psr_modifier_default]
+Compiling architecture arqpsr of entity psr [psr_default]
+Compiling architecture behavioral of entity aLU [alu_default]
+Compiling architecture behavioral of entity procesador_intento [procesador_intento_default]
+Compiling architecture behavior of entity tb_procesadorintento
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 VHDL Units
-Built simulation executable D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesador_isim_beh.exe
-Fuse Memory Usage: 29752 KB
-Fuse CPU Usage: 374 ms
+Waiting for 11 sub-compilation(s) to finish...
+Compiled 31 VHDL Units
+Built simulation executable D:/Desktop/PROCESADOR NUEVO/PROCESADOR4/Tb_procesadorIntento_isim_beh.exe
+Fuse Memory Usage: 38156 KB
+Fuse CPU Usage: 670 ms
